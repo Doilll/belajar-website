@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java basic</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <header id="header-nav"><h2>Java Basic</h2></header>
+                <ul>
+                    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#Installation">Instalation</a></li>
+                    <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                    <li><a class="nav-link" href="#Tipe_Data_dan_Variabel">Tipe Data dan Variabel</a></li>
+                    <li><a class="nav-link" href="#Operators">Operators</a></li>
+                    <li><a class="nav-link" href="#If...else_statement">if...else statement</a></li>
+                    <li><a class="nav-link" href="#For-loop">For-loop</a></li>
+                    <li><a class="nav-link" href="#While-loop">While-loop</a></li>
+                    <li><a class="nav-link" href="#Array">Array</a></li>
+                </ul>
+            </nav>
+            <section class="main-section" id="Introduction">
+                <header><h2>Introduction</h2></header>
+                <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Emblem.jpg">
+                <i class="fa-brands fa-java"></i>
+                <article>
+                    <p>
+                        Java adalah bahasa pemrograman yang dibuat oleh james gosling dan sudah ada sejak tahun 1995. Ini bukan kopi ataupun pulau jawa, tapi alat keren yang digunakan buat bikin aplikasi dan game kayak Minecraft. Jadi, bayangin aja Java itu seperti pensil serbaguna buat bikin berbagai macam karya di dunia digital.
+                    </p>
+                    <p>Java menggunakan konsep Object-Oriented Programming (OOP) yang bikin kode lebih terstruktur dan mudah dipelihara.</p>
+                    <p>Kode yang ditulis di Java bisa jalan di berbagai platform (Windows, Mac, Linux, dll). Istilah kerennya adalah "Write Once, Run Anywhere" (WORA). Artinya, kamu nulis sekali, terus bisa dijalanin di mana saja.</p>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="Installation">
+                <header><h2>Instalation</h2></header>
+                <article>
+                    <p>Untuk menginstal Java di komputer kamu membutuhkan jdk yang merupakan toolkit untuk memulai ngoding di java, kamu bisa mengunduhnya di <a href="https://www.oracle.com/id/java/technologies/downloads/" target="_blank">sini</a></p>
+                    <p>Setelah selesai mengunduh Pilih teks editor untuk menulis kode java,Kamu bisa pakai editor teks kayak VS Code, atau IDE kayak IntelliJ IDEA atau Netbeans.</p>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="Hello_World">
+                <header><h2>Hello World</h2></header>
+                <article>
+                    <p>Untuk membuat program pertama di java, buatlah project di kode editor favorit kamu namain project tersebut Hello World,setelah itu kamu akan menemui kode berikut: </p>
+                    <pre>
+                        <code>public class HelloWorld {
+                            public static void main(String[] args) {
+    
+                            }
+                        }</code>
+                    </pre>
+                    <p><i>Inget: nama class harus sama dengan nama file jadi jika nama class nya adalah 'HelloWorld' nama file nya harus HelloWorld.java</i></p>
+                    <p>Kamu nggak perlu tahu sekarang apa arti kode-kode tersebut ketik "sout" lalu tekan Tab di keyboard kamu lalu tambahkan kata "Hello World"</p>
+                    <pre>
+                        <code>public class HelloWorld {
+                            public static void main(String[] args) {
+                               System.out.println("Hello World");
+                            }
+                        }</code>
+                    </pre>
+                    <p>Setelah itu tekan tombol Run atau F5 di keyboard kamu, maka kamu akan melihat teks Hello World tercetak di Terminal kode editor yang kamu buat</p>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="Tipe_Data_dan_Variabel">
+                <header><h2>Tipe Data dan Variabel</h2></header>
+                <article>
+                    <p>Bayangin kamu punya kotak yang bisa menyimpan suatu barang yang berlabel.
+                        Tipe data itu adalah label yang ada dibarang tersebut sedangkan variabel adalah kotak untuk nyimpen barang/data.
+                        <br>contoh deklarasi:<b>"int kotak = 10"</b>.
+                        <br>int adalah tipe data/label yang menyatakan kotak tersebut berisi angka 10.
+                    </p>
+                    <p>Ada beberapa tipe data dasar di Java, diantaranya:</p>
+                    <ul>
+                        <li><strong>String</strong> yang bisa nyimpen kata atau kalimat contoh: <b>'String nama = "budi";'</b>. <i>wajib nambahin tanda petik kalo buat data bertipe Stirng</i></li>
+                        <li><strong>int</strong> yang bisa nyimpen angka bulat contoh: <b>'int umur = 100;'</b></li>
+                        <li><strong>double</strong> yang bisa nyimpen angka desimal contoh: <b>'double tinggiBadan = 175.5;'</b></li>
+                        <li><strong>boolean</strong> Yang bisa nyimpen nilai true/false contoh: <b>'boolean sukaJva = true;'</b></li>
+                    </ul>
+                    <p>Salin dan jalankan kode berikut:</p>
+                    <pre>
+                        <code>public class TipeDataContoh {
+                            public static void main(String[] args) {
+                                int umur = 20;
+                                double tinggi = 1.75;
+                                boolean sukaJava = true;
+                                String nama = "Ali";
+                                System.out.println("Nama: " + nama);
+                                System.out.println("Umur: " + umur);
+                                System.out.println("Tinggi: " + tinggi);
+                                System.out.println("Inisial: " + inisial);
+                                System.out.println("Suka Java: " + sukaJava);
+                            }
+                        }
+                        </code>
+                    </pre>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="Operators">
+                <header><h2>Operators</h2></header>
+                <article>
+                    <p>Operator adalah simbol yang biasa digunain buat melakukan operasi matematika, ataupun logika pada nilai maupun variabel.
+                    </p>
+                    <p>Ada beberapa operator di Java, diantaranya: 
+                        <br><ol>
+                            <li><strong>Operator Aritmatika</strong>
+                                <br>Operator ini buat ngitung kayak kalkulator:
+                                <ul>
+                                    <li><strong>+</strong> (pertambahan): <b>'5 + 3 hasilnya 8'</b></li>
+                                    <li><strong>-</strong> (pengurangan): <b>'5 - 3 hasilnya 2'</b></li>
+                                    <li><strong>*</strong> (perkalian): <b>'5 * 3 hasilnya 15'</b></li>
+                                    <li><strong>/</strong> (pembagian): <b>'6 / 3 hasilnya 2'</b></li>
+                                    <li><strong>%</strong> (modulus/sisa bagi): <b>'5 % 3 hasilnya 2'</b></li>
+                                </ul>
+                            </li>
+                            <li><strong>Operator Penugasan</strong>
+                                <br>Operator ini buat ngasih nyimpen ke variabel:
+                                <ul>
+                                    <li><strong>=</strong> (samadengan): 'int umur = 20'</li>
+                                    <li><strong>+=</strong> (tambah samadengan): <b>'int umur += 5 (umur jadi 25)'</b></li>
+                                    <li><strong>-=</strong> (kurang samadengan): <b>'int umur -= 5 (umur jadi 15)'</b></li>
+                                    <li><strong>*=</strong> (kali samadengan): <b>'int umur *= 2 (umur jadi 40)'</b></li>
+                                    <li><strong>/=</strong> (bagi samadengan): <b>'int umur /= (umur jadi 10)'</b></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Operator Logika</strong>
+                                <br>Operator ini buat logika (true/false):
+                                <ul>
+                                    <li><strong>&amp;&amp;</strong> (dan): <b>'true &amp;&amp; false hasilnya false'</b></li>
+                                    <li><strong>||</strong> (atau): <b>'true || false hasilnya true'</b></li>
+                                    <li><strong>!</strong> (tidak): <b>'!true hasilnya false'</b></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Operator Inkrement dan Dekrement</strong>
+                                <br>Buat nambah atau ngurang nilai variabel secara simpel:
+                                <ul>
+                                    <li><strong>++</strong> (inkrement): <b>'int a = 5; a++;' (a jadi 6)</b></li>
+                                    <li><strong>--</strong> (decrement): <b>'int a = 5; a--;' (a jadi 4)</b></li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <p>Berikut implementasinya pada kode java</p>
+                        <pre>
+                            <code>
+                                public class OperatorContoh {
+                                    public static void main(String[] args) {
+                                        int a = 5;
+                                        int b = 3;
+                                
+                                        // Operator Aritmatika
+                                        System.out.println("a + b = " + (a + b));
+                                        System.out.println("a - b = " + (a - b));
+                                        System.out.println("a * b = " + (a * b));
+                                        System.out.println("a / b = " + (a / b));
+                                        System.out.println("a % b = " + (a % b));
+                                
+                                        // Operator Penugasan
+                                        int c = 10;
+                                        c += 5;
+                                        System.out.println("c += 5 -> c = " + c);
+                                
+                                        // Operator Perbandingan
+                                        System.out.println("a == b: " + (a == b));
+                                        System.out.println("a != b: " + (a != b));
+                                        System.out.println("a > b: " + (a > b));
+                                        System.out.println("a < b: " + (a < b));
+                                
+                                        // Operator Logika
+                                        boolean x = true;
+                                        boolean y = false;
+                                        System.out.println("x && y: " + (x && y));
+                                        System.out.println("x || y: " + (x || y));
+                                        System.out.println("!x: " + (!x));
+                                
+                                        // Operator Inkrement dan Dekrement
+                                        int d = 7;
+                                        d++;
+                                        System.out.println("d++ -> d = " + d);
+                                        d--;
+                                        System.out.println("d-- -> d = " + d);
+                                    }
+                                }                                
+                            </code>
+                        </pre>
+                    </p>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="If...else_statement">
+                <header><h2>If...else statement</h2></header>
+                <article>
+                    <p>
+                        If-else statement adalah cara buat bikin keputusan di dalam programmu. Bayangin aja kamu lagi main game dan harus pilih jalan: kanan atau kiri. If-else statement ini ngebantu programmu buat milih jalan mana yang harus diambil berdasarkan kondisi tertentu.
+                    </p>
+                    <p>
+                        Kurang lebih strukturnya kaya gini <code>if(kondisi) {true
+                            } else {
+                                false
+                            }</code>
+                    </p>
+                    <p>Berikut adalah cara penggunaan if else statement pada program:</p>
+                    <pre>
+                        <code>
+                            int umur = 20;
+                            if (umur >= 18) {
+                                System.out.println("Kamu sudah dewasa!");
+                            } else {
+                                 System.out.println("Kamu masih di bawah umur.");
+                            }
+                                                      
+                        </code>
+                    </pre>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="For-loop">
+                <header><h2>For-loop</h2></header>
+                <article>
+                    <p>
+                        Bayangin kamu disuruh ngetik maaf sama pacarmu 1000 kali,akan memakan waktu sangat lama jika mengetiknya satu per satu.
+                        Nah, untuk mengatasi hal ini kita bisa menggunakan for-loop. dengan for-loop kamu bisa mengulang kode yang sama secara praktis dan efisien sesuai dengan kebutuhan
+                    </p>
+                    <p>Berikut adalah struktur kode for-loop</p>
+                    <code>
+                        for (inisialisasi; kondisi; update) {
+                            // Kode yang diulang
+                        }
+                    </code>
+                    <ul>
+                        <li>inisialisasi: inisialisasi adalah variabel yang digunakan untuk nge-set variabel awal</li>
+                        <li>kondisi: Bagian ini dicek setiap kali loop mau dijalankan. Kalau true, kode di dalam loop dijalankan; kalau false, loop berhenti.</li>
+                        <li>update: Bagian ini dijalankan setiap kali loop selesai satu putaran</li>
+                    </ul>
+                    <p>Berikut ontoh penggunaan for-loop agar lebih jelas dan mengerti: </p>
+                    <pre>
+                        <code>
+                            public class ForLoopContoh {
+                                public static void main(String[] args) {
+                                    for (int i = 0; i < 5; i++) {
+                                        System.out.println("Perulangan ke-" + i);
+                                    }
+                                }
+                            }                            
+                        </code>
+                    </pre>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="While-loop">
+                <header><h2>While-loop</h2></header>
+                <article>
+                    <p>
+                        While-loop mirip dengan for-loop, bedanya di penggunaan aja,perulangan for loop lebih terstruktur karena kamu perulangan harus ditentukan kapan mau berhenti,
+                        sedangkan untuk while loop cocok digunakan ketika kamu ga tau berapa kali kamu mau ngulang kayak lagi nonton video reels 
+                        atau tiktok video akan terus berulang selagi kamu belum bosen atau sampe kamu scroll video selanjutnya
+                    </p>
+                    <p>Berikut adalah struktur kode while-loop: </p>
+                    <code>
+                        while (kondisi) {
+                            // Kode yang diulang
+                        }
+                    </code>
+                    <p>Kondisi akan terus berulang selama kondisi bernilai true</p>
+                    <p>Berikut adalah contoh penggunaan while-loop: </p>
+                    <pre>
+                        <code>
+                            int i = 0;
+                            while (i < 5) {
+                                System.out.println("Perulangan ke-" + i);
+                                i++;
+                            }
+                        </code>
+                    </pre>
+                    <pre>
+                        <code>
+                            int i = 0;
+                            while (i < 5) {
+                                System.out.println("Perulangan ke-" + i);
+                                if(i % 2 == 0) {
+                                    break;
+                                }
+                            }
+                        </code>
+                    </pre>
+                    <p>kamu pasti menyadari ada keyword break di kode diatas,nah fungsi keyword break itu buat ngeberhentiin perulangan tanpa perlu nyesuaiin dengan kondisi,bisa digunain juga buat perulangan for</p>
+                    <p>Ada juga varian while yang lain yaitu do while-loop berikut cara penggunaannya: </p>
+                    <pre>
+                        <code>
+                            int i = 0;
+                            do {
+                                System.out.println("Perulangan ke-" + i);
+                                i++;
+                                } while (i < 5);
+                        </code>
+                    </pre>
+                    <hr>
+                </article>
+            </section>
+            <section class="main-section" id="Array">
+                <header><h2>Array</h2></header>
+                <article>
+                    <p>
+                        Jika variabel adalah kotak yang hanya bisa menyimpan satu data saja,maka array merupakan sebuah rak yang menyimpan banyak data sekaligus secara terstruktur
+                    </p>
+                    <p>
+                        Untuk mendeklasrasi array kamu bisa seperti ini <code>i[] a = new int[panjang data/kapasitas]</code>
+                    </p>
+                    <p>Contoh penggunaan: </p>
+                    <pre>
+                        <code>
+                            // Deklarasi array tanpa inisialisasi(kapasitas data)
+                            int[] angka;
+
+                            // Deklarasi dan inisialisasi array
+                            int[] nilai = new int[5];
+
+                            // Deklarasi dan inisialisasi array dengan nilai awal
+                            int[] skor = {100, 90, 85, 70, 60};
+                        </code>
+                    </pre>
+                    <p>
+                        Untuk mengakses data array, indexnya dimulai dari angka 0 jadi semisal panjang data kamu 5 indeks terakhirnya itu 4 karena indeks dimulai dar 0
+                    </p>
+                    <pre>
+                        <code>
+                            int[] skor = {100, 90, 85, 70, 60};
+                            System.out.println("indeks ke 3: "+skor[3]);
+                            int a = skor[0]
+                            System.out.println("indeks ke 0: "+a);
+                        </code>
+                    </pre>
+                    <hr>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

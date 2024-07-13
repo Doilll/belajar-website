@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>survey-form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title" class="menyesuaikan">Form gak guna</h1>
+        <p id="description" class="menyesuaikan"><b>Form ini dibuat hanya untuk kegabutan saya saja</p></b></p>
+        <div class="Form">
+            <form id="survey-form">
+                <label id="name-label" for="name">Name
+                    <input required id="name" type="text" placeholder="Input nama anda" class="awal"></input>
+                </label>
+                <label id="email-label" for="email">Email
+                    <input required id="email" type="email" placeholder="Input email anda" class="awal"></input>
+                </label>
+                <label id="number-label" for="number">Age
+                    <input id="number" type="number" placeholder="Input umur anda" min="5" max="100" class="awal"></input>
+                </label>
+                <fieldset>
+                    <legend>Jenis kelamin</legend>
+                    <label for="manusia">
+                        <input name="Spesies" id="manusia" type="radio" class="inline"></input>
+                        Perempuan
+                    </label>
+                    <label for="alien">
+                        <input name="Spesies" id="alien" type="radio" class="inline"></input>
+                        Laki-laki
+                    </label>
+                </fieldset>
+                <label for="referre">Pilih pekerjaan anda
+                    <select id="referrer" class="ok">
+                        <option value="" disabled selected>Pilih salah satu salah satu</option>
+                        <option value="1">Wiraswasta</option>
+                        <option value="2">Pegawai negeri</option>
+                        <option value="3">Mahasiswa</option>
+                        <option value="4">Pensiunan</option>
+                        <option value="5">Lainnya</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend>Pilih minat anda</legend>
+                    <label for="hobi" >
+                        <input id="hobi" type="checkbox" class="inline"/> Olahraga
+                    </label>
+                    <label for="hobi" >
+                        <input id="hobi" type="checkbox" class="inline"/> Teknologi
+                    </label>
+                    <label for="hobi" >
+                        <input id="hobi" type="checkbox" class="inline"/> Kesehatan
+                    </label>
+                    <label for="hobi" >
+                        <input id="hobi" type="checkbox" class="inline"/> Seni
+                    </label>
+                    <label for="hobi" >
+                        <input id="hobi" type="checkbox" class="inline"/> lainnya
+                    </label>
+                </fieldset>
+                <label for="bio">
+                    <textarea name="bio" id="bio" rows="3" cols="30" placeholder="Masukan bio disini"></textarea>
+                </label>
+                <label>
+                    <input type="submit" value="Submit">
+                </label>
+            </form>
+        </div>
+    </body>>
+</html>
