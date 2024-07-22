@@ -1,0 +1,246 @@
+* {
+    margin:0 ;
+    padding:0 ;
+}
+
+.logo-img {
+    width: 150px;
+    height: 70px;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 5px;
+}
+
+body {
+    background-image: linear-gradient(to right, #6d2d0e, #ee6b14);
+}
+
+#header {
+    height: 80px;
+    background: rgba(12, 11, 11, 0.932);
+    border-radius: 1px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.9px);
+    -webkit-backdrop-filter: blur(15.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: fixed; /* Add this line */
+    top: 0; /* Add this line */
+    z-index: 1;
+}
+
+.neck {
+    height:100px;;
+}
+
+#header div {
+    float: left;
+}
+
+#header nav{
+    float: right;
+}
+
+.bar li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.testbutton {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000 !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #D61E4F;
+    box-shadow: 1px 1px 1px #0e1011;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 2px solid #111214;
+    background: #EE7F34;
+    background: linear-gradient(to top, #EE7F34, #CF603E);
+  }
+
+.testbutton:hover {
+    color: #f3f5f7 !important;
+    background: #000000;
+    background: linear-gradient(to top, #000000, #000000);
+}
+
+.gambar {
+    width: 50%;
+    background-color: #000000;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+@media only screen and (max-width:748px) {
+    .gambar {
+        width: 100%;
+    }
+}
+
+.gambar section {
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    float: right;
+}
+
+.gambar section p {
+    margin-top: 10px;
+    text-align: end;
+    margin-right: 17px;
+    color:cornsilk;
+}
+
+#contoh {
+    width: 400px;
+    margin: 15px;
+}
+
+#featured {
+    margin-top: 30px;
+}
+
+.listfeature {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.featuredlogo1 {
+    width: 40px;
+    border-radius: 200px;
+}
+
+.featured1 {
+    display: flex;
+    margin: 10px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: #000000 !important;
+    font-size: 17px;
+}
+
+.featured1 h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#see-more {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.listprice {
+    /* From https://css.glass */
+    background: rgba(11, 9, 9, 0.63);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(11, 9, 9, 0.3);
+    text-align: center;
+    width: 250px;
+    height: 290px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color: #fff;
+    margin: 10px;
+}
+
+.listprice header {
+    background-color: black;
+    color: orange;
+    font-size: 25px;
+    font-family: "Lucida Console", Monaco, monospace;
+    height: 60px
+}
+
+.listprice p strong {
+    font-size: 30px;
+    color:#fab592;
+}
+
+#price {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#form {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90px;
+    background: rgba(11, 9, 9, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.3px);
+    -webkit-backdrop-filter: blur(0.3px);
+    border: 1px solid rgba(11, 9, 9, 0.3);
+    width: 250px;
+    margin: 25px auto
+}
+
+#form input {
+    width: 200px;
+    margin:5px auto;
+}
+
+#submit {
+    background-color: #da510c;
+    font-family: 'Courier New', Courier, monospace;
+    color: #150433;
+    border: 1px solid #030303;
+    border-radius: 15px;
+}
+
+#submit:hover {
+    background-color: #6306f8;
+}
+
+.for-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#email {
+    border-radius: 7px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gambar {
+    width: 140px;
+    background-color: #000000;
+    height: 100px;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+footer ul {
+    list-style-type: none;
+    float: right;
+}
+
+footer ul li {
+    display: inline-block;
+    
+}
